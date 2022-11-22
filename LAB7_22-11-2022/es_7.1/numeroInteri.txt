@@ -1,0 +1,2 @@
+Inserisci dei numeri
+Interi: 7
