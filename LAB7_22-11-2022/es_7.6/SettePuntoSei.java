@@ -55,34 +55,6 @@ public class SettePuntoSei{
 	}
 	line = line.substring(0,line.length()-1);
 	return line;
-
-
-	//PORVARE CON CONTATORE E UNICO WHILE
-	/*String completeWord = "";
-   	String first = s.substring(0,1).toUpperCase();
-	if (s.length()>1){
-		String second = s.substring(1).toLowerCase();
-		completeWord = first+second;	
-	}
-	else completeWord = first;
-
-	//String tot = "";
-	Scanner sc = new Scanner(completeWord);
-	sc.useDelimiter("'");
-	while(sc.hasNext()){
-		String s2 = sc.next();
-		System.out.println("Parola: "+s2);
-		String p1 = s2.substring(0,1).toUpperCase();
-		if(s2.length()>1){
-			String p2 = s2.substring(1);
-			completeWord = p1+p2;	
-		}
-		else completeWord = p1;
-		completeWord += "'";
-	}
-	//completeWord = p1+p2.substring(0, p2.length()-1);
-	
-	return completeWord;*/
    }
 	
 
