@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.io.*;
 public class SettePuntoSei{
    public static void main(String[] args){
       Scanner sc = new Scanner(System.in);
@@ -12,17 +13,10 @@ public class SettePuntoSei{
       try(FileReader r = new FileReader(lettura); PrintWriter out = new PrintWriter(scrittura); Scanner sc1 = new Scanner(r)){
          while(sc1.hasNext()){
             word = sc1.next();
-            /*for(int i=0; i<word.length();i++){
-               if(i==0){
-                  word[i] = word[i].toUpperCase();
-               }
-               else{
-                  word[i].toLowerCase();
-               }
-            }*/
-            String first = word.
+            String first = word.substring(0,1).toUpperCase();
+		  String second = word.substring(1,word.length()).toLowerCase();
+		  word = first + second;
             out.print(word+" ");
-            //body += word + " ";
          }
          
          
