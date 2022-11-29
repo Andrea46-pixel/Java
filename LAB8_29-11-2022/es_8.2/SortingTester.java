@@ -24,14 +24,21 @@ public class SortingTester{
             System.out.println(arr1[i]);
          } 
          //riordino l'array
+         long time1 = System.currentTimeMillis();
          ArrayAlgs.selectionSort(arr1);
+         long time2 = System.currentTimeMillis();
          System.out.println("#################");
          for(int i = 0; i < arr1.length; i++){
             System.out.println(arr1[i]);
-         }    
+         }
+         System.out.println("TIME: "+(time2-time1));    
       }
-      else ArrayAlgs.selectionSort(arr1);
-      
+      else{
+         long time1 = System.currentTimeMillis();
+         ArrayAlgs.selectionSort(arr1);
+         long time2 = System.currentTimeMillis();
+         System.out.println("TIME: "+(time2-time1));
+      }
       
       
       
@@ -51,8 +58,12 @@ public class SortingTester{
             System.out.println(arr2[i]);
          }    
       }
-      else ArrayAlgs.mergeSort(arr2);
-      
+      else{
+         long time1 = System.currentTimeMillis();
+         ArrayAlgs.mergeSort(arr2);
+         long time2 = System.currentTimeMillis();
+         System.out.println("TIME: "+(time2-time1));
+      }
       
       //INSERTION SORT
       System.out.println("----------INSERT SORT------------");
@@ -70,7 +81,12 @@ public class SortingTester{
             System.out.println(arr3[i]);
          }    
       }
-      else ArrayAlgs.insertSort(arr3);
+      else{
+         long time1 = System.currentTimeMillis();
+         ArrayAlgs.insertSort(arr3);
+         long time2 = System.currentTimeMillis();
+         System.out.println("TIME: "+(time2-time1));
+      }
    }
 
 }
