@@ -1,0 +1,1 @@
+Realizzare una classe ArrayTable100 che implementi l'interfaccia Table fissando la dimensione della tabella a 100. Nel caso in cui si provi ad utilizzare chiavi con valore <0 oppure >=100 lanciare l'eccezione InvalidPositionTableException (da realizzare derivandola da RuntimeException). Potete provare la classe con il tester TableTester.java o scrivere un vostro tester.

@@ -1,0 +1,1 @@
+Realizzare una classe ArrayMultiMap che implementi l'interfaccia MultiMap con un array riempito in parte in cui l'ordine degli elementi non e' importante. Riflettere sulla complessita' dei metodi di inserimento/rimozione/ricerca. Potete provare la classe con il tester MultiMapTester

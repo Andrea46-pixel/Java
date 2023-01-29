@@ -1,0 +1,23 @@
+Implementare l’ADT Deque la cui interfaccia e' descritta qui con una classe ArrayDeque.
+
+Utilizzare un array gestito come coda circolare in modo che ogni operazione sia O(1), cioè tempo-costante. Fare attenzione alle condizioni di riempimento/svuotamento (suggerimento: e’ possibile utilizzare una variabile di esemplare size che tenga traccia del numero di elementi presenti).
+
+Attenzione! Last funziona come abbiamo visto per la coda, mentre first indichera' la prima posizione in cui inserire in testa agli elementi gia' presenti. Quando raggiunge l'estremo sinistro (cella di indice 0) deve proseguire dall'ultima (cella di indice v.length-1) per garantire la circolarita' anche in quella direzione.
+
+Il ridimensionamento puo' essere fatto come abbiamo visto per la coda circolare, tuttavia la cosa importante e' che venga mantenuto l'ordine relativo tra gli elementi,
+non gli indici effettivamente occupati da tali elementi. Per questo puo' essere conveniente, quando si devono copiare gli elementi nel nuovo array, partire dalla sua prima posizione, cosi' che gli elementi, in ordine occupino le posizioni da 0 a size-1 nel
+nuovo array. In questo modo e' piu' facile stabilire i valori da associare a
+first (newV.length-1) e last (size).
+
+Sovrascrivere nella classe ArrayDeque il metodo toString() in modo che restituisca una stringa in “formato array” dell’intero array. Ad esempio se la dimensione fisica e’ 6 e nelle prime tre celle ci sono i numeri 1, 2 e 3 la stringa restituita sara’: “[1 2 3 null null null]”.
+
+E’ possibile testarne il funzionamento con il bytecode ProfDequeTester.class fornito.
+
+Scrivere una classe DequeTester di prova che:
+
+crei tre esemplari della classe ArrayDeque di nome uno, due e tre
+legga dall'ingresso standard una sequenza di numeri interi (uno per riga) e li inserisca alla fine della coda uno (con addLast)
+svuoti la coda uno dalla fine (con removeLast) trasferendone il contenuto all'inizio della coda due (con AddFirst)
+svuoti la coda due dall'inizio (con removeFirst) inserendo i dati alla fine della coda tre
+svuoti infine la coda tre dall'inizio scrivendo i dati sull'uscita standard, uno per riga.
+I dati in uscita dovranno essere nello stesso ordine dei dati in ingresso.

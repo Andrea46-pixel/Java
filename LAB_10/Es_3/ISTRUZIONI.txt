@@ -1,0 +1,2 @@
+Realizzare una classe SortedArrayMultiMap che implementi l'interfaccia MultiMap con un array riempito in parte in cui le associazioni sono mantenute in ordine di chiave.
+Riflettere sulla complessita' dei metodi di inserimento/rimozione/ricerca e le differenze con l'implementazione dell'esercizio 2. Potete provare la classe con il tester SortedMultiMapTester.
