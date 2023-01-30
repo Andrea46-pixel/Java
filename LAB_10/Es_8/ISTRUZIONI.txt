@@ -1,0 +1,35 @@
+Obiettivo: imparare a gestire le operazioni di una lista concatenata.
+
+Data la struttura dati lista concatenata implementata nella classe LinkedList.java (che fornisce i metodi: addFirst, addLast, removeFirst, removeLast, toString, getIterator) implementare una classe eseguibile LinkedListTester.java in cui:
+
+1) Si crei un esemplare di LinkedList inizialmente vuota
+
+2) Si chieda all'utente di inserire un numero intero n
+
+3) Si popoli la lista concatenata generando n numeri casuali con valori da 1 a 100. In particolare il primo numero andra' inserito all'inizio della lista, il secondo alla fine, il terzo all'inizio e cosi' via... Per ogni inserimento stampare a video il valore da inserire e il contenuto della lista concatenata dopo ogni inserimento (sfruttare il fatto che LinkedList implementi toString) e verificare che l'inserimento avvenga correttamente.
+
+4) Chiedere all'utente dopo quale elemento presente nella lista si vuole inserire il valore 1000. Creare un'istanza di ListIterator sull'istanza di lista concatenata su cui si sta lavorando (sfruttare il metodo getIterator()) e scansionare la lista (in modo opportuno con i metodi hasNext() e next()). Quando si individua l'elemento inserito dall'utente, invocare il metodo di inserimento dell'iteratore (add(Object o)) passando il valore 1000. Alla fine della scansione stampare il contenuto della lista concatenata e verificare che 1000 sia stato inserito nella giusta posizione.
+
+5) Chiedere all'utente un elemento da eliminare. Creare una nuova istanza dell'iteratore, scansionare la lista e, quando si individua l'elemento indicato, eliminarlo dalla lista con il metodo dell'iteratore (remove()). Alla fine della scansione stampare il contenuto della lista concatenata e verificare che l'elemento sia stato eliminato.
+
+6) Rimuovere il primo elemento della lista e stamparne il contenuto per verificare che l'operazione sia andata a buon fine.
+
+7) Rimuovere l'ultimo elemento della lista e stamparne il contenuto per verificare che l'operazione sia andata a buon fine.
+
+Es: Se i numeri generati casualmente, in ordine, sono: 45,2,67,34,77,21 la lista avra' questo contenuto: 77 67 45 2 34 21
+
+Se l'utente inserisce il numero 45, il valore 1000 verra' introdotto dopo di esso:
+
+77 67 45 1000 2 34 21
+
+Se l'untente inserisce il numero 2, questo verra' rimosso
+
+77 67 45 1000 34 21
+
+Eliminazione del primo elemento
+
+67 45 1000 34 21
+
+Eliminazione dell'ultimo elemento
+
+67 45 1000 34

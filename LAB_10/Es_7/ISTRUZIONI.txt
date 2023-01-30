@@ -1,0 +1,3 @@
+Implementare una "Pila sicura" in cui gli elementi inseriti possono solo essere stringhe.
+
+Se si prova a inserire un elemento che non e' una stringa, lanciare IllegalArgumentException.
